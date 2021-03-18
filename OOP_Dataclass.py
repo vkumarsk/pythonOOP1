@@ -16,13 +16,10 @@ class Pets:
     address : str
 birthdate : date
 
-
-
 def calculateAge(birthdate):
    today = date.today()
    age = today.year - birthdate.year - ((today.month, today.day) < (birthdate.month, birthdate.day))
    return age
-
 
 PetAge = calculateAge(date(2017, 2, 3))
 print('The Age of the pet is', PetAge)
